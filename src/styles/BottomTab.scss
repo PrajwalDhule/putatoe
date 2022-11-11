@@ -14,7 +14,7 @@ $green: #007092;
   width: 100vw;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 16px;
+  gap: 20px;
   background-color: white;
   @include flex(center);
   .option {
