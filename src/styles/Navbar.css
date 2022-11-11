@@ -1,0 +1,100 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.nav-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+  width: 100vw;
+  background-color: #007092;
+  padding: 1em;
+}
+
+.nav-body .icon {
+  height: 3vh;
+  color: white;
+}
+
+.nav-body .nav-1,
+.nav-body .nav-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 95%;
+}
+
+.nav-body .nav-1 input:focus,
+.nav-body .nav-2 input:focus {
+  outline: none;
+}
+
+.nav-body .nav-1 .location-bar {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-body .nav-1 input {
+  border-radius: 5px;
+  padding: 0.4em;
+  margin-left: 1em;
+  width: 90%;
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+.nav-body .nav-2 {
+  margin-top: 1em;
+}
+
+.nav-body .nav-2 .searchbar {
+  width: 85%;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+.nav-body .nav-2 .searchbar input {
+  border: none;
+  width: 90%;
+  background-color: white;
+  padding: 0.5em;
+  margin-left: 1em;
+  width: 60vw;
+}
+/*# sourceMappingURL=Navbar.css.map */

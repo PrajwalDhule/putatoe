@@ -1,0 +1,38 @@
+$green: #007092;
+
+@mixin flex($jc) {
+  display: flex;
+  justify-content: $jc;
+  align-items: center;
+}
+
+.bottom-tab-body {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 3;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  background-color: white;
+  @include flex(center);
+  .option {
+    img,
+    p {
+      margin-inline: auto;
+      margin-top: 0.5em;
+    }
+    img {
+      height: 1.25em;
+    }
+    p {
+      font-size: 0.9rem;
+      color: $green;
+      margin: 0.25em 0 0.4em 0;
+    }
+    img.logo {
+      height: 3em;
+    }
+  }
+}

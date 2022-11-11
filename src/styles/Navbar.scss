@@ -1,0 +1,65 @@
+$green: #007092;
+
+@mixin flex($jc) {
+  display: flex;
+  justify-content: $jc;
+  align-items: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.nav-body {
+  @include flex(center);
+  flex-direction: column;
+  margin: 0;
+  width: 100vw;
+  background-color: $green;
+  padding: 1em;
+  .icon {
+    height: 3vh;
+    color: white;
+  }
+
+  .nav-1,
+  .nav-2 {
+    @include flex(space-between);
+    width: 95%;
+    input:focus {
+      outline: none;
+    }
+  }
+  .nav-1 {
+    .location-bar {
+      width: 70%;
+      @include flex(center);
+    }
+    input {
+      border-radius: 5px;
+      padding: 0.4em;
+      margin-left: 1em;
+      width: 90%;
+      background-color: transparent;
+      border: 2px solid white;
+    }
+  }
+  .nav-2 {
+    margin-top: 1em;
+    .searchbar {
+      width: 85%;
+      background-color: white;
+      @include flex(center);
+      border: 2px solid white;
+      border-radius: 5px;
+      input {
+        border: none;
+        width: 90%;
+        background-color: white;
+        padding: 0.5em;
+        margin-left: 1em;
+        width: 60vw;
+      }
+    }
+  }
+}
