@@ -1,9 +1,9 @@
 .bottom-tab-body {
+  width: 100vw;
   position: fixed;
   left: 0;
   bottom: 0;
   z-index: 3;
-  width: 100vw;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[5];
